@@ -82,3 +82,8 @@ for(int i=0 ; i<n; i++){
     return 0;
 }
 //time complexity is: o(n+q)
+
+
+
+
+codeforces question: https://codeforces.com/contest/961/problem/B 
