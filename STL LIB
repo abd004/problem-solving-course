@@ -1,0 +1,14 @@
+some of function for arrays:
+
+- binary_search(arr , arr+n , 5) : you want to search about element(5) **you can use this function just when array is sorted**
+- lower_bound(arr , arr+n , 5) : it will return the index of the first value greater or equal the element (5)  **you can use this function just when array is sorted**
+- upper_bound(arr , arr+n , 5) : it will return the index of the first value greater than element (5)  **you can use this function just when array is sorted**
+
+functions for vector: 
+- vec.front() to access and use in print the first index
+- vec.back() to access and use in print the last index
+- vec.pop_back() to remove the last element 
+*if you want to sort decreasing you can use:
+sort(vec.begin(),vec.end(),greater<int>());
+but you can use this better:
+sort(vec.rbegin(),vec.rend()); >>>>>>> sort then reverse
