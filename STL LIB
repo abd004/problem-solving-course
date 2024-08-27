@@ -12,3 +12,34 @@ functions for vector:
 sort(vec.begin(),vec.end(),greater<int>());
 but you can use this better:
 sort(vec.rbegin(),vec.rend()); >>>>>>> sort then reverse
+
+strchr("AEIOUYaeiouy",w[i]) find an index of string w at string "AEIOUYaeiouy" and return boolean
+
+deque: it has a same function of vector but with some differences:  
+- deq.push_front(7);  it will add element(7) at first index and shift the other other elements
+- deq.pop_front(); it will remove the first index
+
+*you can use any function for vector*
+
+deq.erase(deq.begin() + indexnum refers from 0) such as : deq.erase(deq.begin() + 3) it will remove the element at index 3  
+*u can use this function to vector also*
+
+if you want to make a (vector or deque) elements without duplicate 
+
+first you have to sort the (vector or deque)
+then : deq.erase(unique( deq.begin() ,deq.end() ), deq.end() );
+**you can define : all(v) deq.begin() ,deq.end()
+so: deq.erase(unique(all(deq)), deq.end() );
+
+2 dimension vector: vector<vector<int>>vec(rows)
+but it better to use: vector<array<int,5>>vec(rows) it rows : 5 column 
+
+
+
+
+
+
+
+
+
+
