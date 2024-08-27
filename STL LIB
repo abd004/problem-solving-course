@@ -3,7 +3,7 @@ some of function for arrays:
 - binary_search(arr , arr+n , 5) : you want to search about element(5) **you can use this function just when array is sorted**
 - lower_bound(arr , arr+n , 5) : it will return the index of the first value greater or equal the element (5)  **you can use this function just when array is sorted**
 - upper_bound(arr , arr+n , 5) : it will return the index of the first value greater than element (5)  **you can use this function just when array is sorted**
-
+*********************************************************************************************************************************************************************
 functions for vector: 
 - vec.front() to access and use in print the first index
 - vec.back() to access and use in print the last index
@@ -12,7 +12,7 @@ functions for vector:
 sort(vec.begin(),vec.end(),greater<int>());
 but you can use this better:
 sort(vec.rbegin(),vec.rend()); >>>>>>> sort then reverse
-
+*********************************************************************************************************************************************************************
 strchr("AEIOUYaeiouy",w[i]) find an index of string w at string "AEIOUYaeiouy" and return boolean
 
 deque: it has a same function of vector but with some differences:  
@@ -38,10 +38,10 @@ but it better to use: vector<array<int,5>>vec(rows) it rows : 5 column
 
 
 so we can say the first part of STL is sequential containers : vector , deque and array 
-
+*********************************************************************************************************************************************************************
 2-container adapters : stack , queue and priority_queue
 
-1.stack : Last element is First output  (LAST ELEMENT FIRST OUTPUT)  YOU CAN DEAL JUST WITH LAST ELEMENT
+1.stack : Last element is First output  (last in first out)  YOU CAN DEAL JUST WITH LAST ELEMENT
 to declare: stack <int> st; 
 st.push(4);
 st.push(7);
@@ -49,13 +49,37 @@ st.push(9);
 
 *st=[4,7,9]
 
-you can print just last element: 
-cout<<st.pop(); >>> 9
+if you want to print last element without remove it
+cout<<st.top();
 
+you can print and remove last element: 
+cout<<st.pop(); >>> 9 but you will remove 9
 *st=[4,7]
 
 
 
+st.size() >>it will return number refers to length
+st.empty()>>it will return boolean
+
+*********************************************************************************************************************************************************************
+
+2-queue: first in first out 
+to declare: queue <int> qu;
+qu.push(5);
+qu.push(6);
+qu.push(2);
+
+qu={5,6,2};
+
+if you want to print last element without remove it
+cout<<qu.front(); >>5 
+
+if you want to print last element with remove it
+cout<<qu.pop(); >>5
+qu={6,2};
+
+qu.size() >>it will return number refers to length
+qu.empty()>>it will return boolean
 
 
 
