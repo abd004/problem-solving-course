@@ -31,10 +31,28 @@ then : deq.erase(unique( deq.begin() ,deq.end() ), deq.end() );
 **you can define : all(v) deq.begin() ,deq.end()
 so: deq.erase(unique(all(deq)), deq.end() );
 
+v.clear() to remove all elements on the vector or deque or array 
+
 2 dimension vector: vector<vector<int>>vec(rows)
 but it better to use: vector<array<int,5>>vec(rows) it rows : 5 column 
 
 
+so we can say the first part of STL is sequential containers : vector , deque and array 
+
+2-container adapters : stack , queue and priority_queue
+
+1.stack : Last element is First output  (LAST ELEMENT FIRST OUTPUT)  YOU CAN DEAL JUST WITH LAST ELEMENT
+to declare: stack <int> st; 
+st.push(4);
+st.push(7);
+st.push(9);
+
+*st=[4,7,9]
+
+you can print just last element: 
+cout<<st.pop(); >>> 9
+
+*st=[4,7]
 
 
 
