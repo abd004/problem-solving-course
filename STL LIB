@@ -81,7 +81,26 @@ qu={6,2};
 qu.size() >>it will return number refers to length
 qu.empty()>>it will return boolean
 
+*********************************************************************************************************************************************************************
 
+3-priority_queue: its a queue but its sorted decreasing
+ priority_queue<int> q;
+    q.push(5);
+    q.push(3);
+    q.push(4);
+    q.push(6);
+    q={6,5,4,3} sorted decreasing
+    cout<<q.top(); >>6  *to print the first element*
+    q.pop(); >>q={5,4,3}  * to remove the first element *
 
+to make P.Q sorted increasing:
+ priority_queue<int,vector<int>,greater<int>> q;
+   q.push(5);
+    q.push(3);
+    q.push(4);
+    q.push(6);
+    q={3,4,5,6} sorted decreasing
+    cout<<q.top(); >>3  *to print the first element*
+    q.pop(); >>q={4,5,6}  * to remove the first element *
 
 
