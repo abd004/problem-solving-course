@@ -12,6 +12,11 @@ functions for vector:
 sort(vec.begin(),vec.end(),greater<int>());
 but you can use this better:
 sort(vec.rbegin(),vec.rend()); >>>>>>> sort then reverse
+
+*function for a string:  *
+ transform(s2.begin(),s2.end(),s2.begin() ,::tolower); to change a whole string into lower case
+ 
+
 *********************************************************************************************************************************************************************
 strchr("AEIOUYaeiouy",w[i]) find an index of string w at string "AEIOUYaeiouy" and return boolean
 
