@@ -3,6 +3,9 @@ some of function for arrays:
 - binary_search(arr , arr+n , 5) : you want to search about element(5) **you can use this function just when array is sorted**
 - lower_bound(arr , arr+n , 5) : it will return the index of the first value greater or equal the element (5)  **you can use this function just when array is sorted**
 - upper_bound(arr , arr+n , 5) : it will return the index of the first value greater than element (5)  **you can use this function just when array is sorted**
+
+but you have to check if the element exist to avoid a runtime error
+
 *********************************************************************************************************************************************************************
 functions for vector: 
 - vec.front() to access and use in print the first index
@@ -151,8 +154,17 @@ cout<<*st.begin()<<"\n";  you have used * to returns the value stored in the add
 cout<<*st.rbegin()<<"\n"; its the first but reversed
 cout<<*--st.end()<<"\n"; because st.end is the next of last element then its null so you have to get back 
 
+you can use lower and upper bound function 
+cout<<*st.lower_bound(5); >>5
+cout<<*st.upper_bound(5); >>7
+but you have check if the element exist 
+you can avoid it by if statment 
+st.lower_bound(element)!=st.end()
 
-
+you can print the element by :
+for(auto it=st.begin() ; it!=st.end ; it++){
+cout<<*it<<" ";
+}
 
 
 
