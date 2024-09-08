@@ -108,4 +108,51 @@ to make P.Q sorted increasing:
     cout<<q.top(); >>3  *to print the first element*
     q.pop(); >>q={4,5,6}  * to remove the first element *
 
+*********************************************************************************************************************************************************************
+3- Associative container:
+
+1+2.SET AND Multiset : SET: unique and sorted || Multiset its just sorted 
+
+**both of them built on Balance Binary Tree and the insert or erase operations is log(n)
+
+set <int> st;
+st.insert(5)
+st.insert(3)
+st.insert(6)
+st.insert(4)
+st.insert(2)
+
+st=[2,3,4,5,6]
+for(auto it: st ){
+cout<<it<<" ";             >> to print all elements of set
+}
+
+st.erase(3) erase function dont need the index its just need the element you want to delete
+**if you erase element not exist in the set then you will have runtime error
+st=[2,4,5,6]
+
+if you want to find an element in the set then you can use find function
+
+st.find(5)!=st.end()   if the pointer of set was equal for st.end() then the element(5) is not found
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
