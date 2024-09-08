@@ -128,14 +128,28 @@ cout<<it<<" ";             >> to print all elements of set
 }
 
 st.erase(3) erase function dont need the index its just need the element you want to delete
-**if you erase element not exist in the set then you will have runtime error
+**if you erase element not exist in the set then you will have runtime error so you can use:
+st.erase(st.find(3)) the element you want to delete is 3
 st=[2,4,5,6]
 
 if you want to find an element in the set then you can use find function
 
 st.find(5)!=st.end()   if the pointer of set was equal for st.end() then the element(5) is not found
 
+all of this function you can use it for multiset
+but if you have like this : mst=[1,2,3,3,3,6,7]
 
+then you want to erase 3
+mst.erase(3)
+then mst=[1,2,6,7] its delete all element equal 3
+
+but if you have used mst.erase(mst.find(3)) it will return just one place of 3 then it will remove one element equal 3
+then mst=[1,2,3,3,6,7]
+
+if you want to print the first and last element in the set ort MST 
+cout<<*st.begin()<<"\n";  you have used * to returns the value stored in the address kept in the pointer variable
+cout<<*st.rbegin()<<"\n"; its the first but reversed
+cout<<*--st.end()<<"\n"; because st.end is the next of last element then its null so you have to get back 
 
 
 
