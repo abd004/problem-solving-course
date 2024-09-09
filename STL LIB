@@ -21,7 +21,11 @@ sort(vec.rbegin(),vec.rend()); >>>>>>> sort then reverse
  
 
 *********************************************************************************************************************************************************************
+functions for string:
 strchr("AEIOUYaeiouy",w[i]) find an index of string w at string "AEIOUYaeiouy" and return boolean
+st.find(st2)!=string::npos     to know if st2 is substring at st1 and if it equal npos(no position) then st2 isnot substr
+
+*********************************************************************************************************************************************************************
 
 deque: it has a same function of vector but with some differences:  
 - deq.push_front(7);  it will add element(7) at first index and shift the other other elements
