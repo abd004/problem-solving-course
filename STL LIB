@@ -170,8 +170,34 @@ for(auto it=st.begin() ; it!=st.end ; it++){
 cout<<*it<<" ";
 }
 
+3-map: map<key,value>: 
+map<int , int>mp;
+mp[5]=0;
 
+**the initial value of map elements is zero
 
+**there is 2 way to insert into a map:
+1-
+mp.insert({5,-1}) >>the key is 5 and the value is -1
+2-
+mp[5]=-1; if the 5 is not exist it will initial a value for it 
+
+there is a size function : cout<<mp.size();
+
+**the map is sorted by keys
+
+mp.find(5)!=mp.end()   if the pointer of map was equal for st.end() then the key(5) is not found
+
+to print a map element:
+for(auto [a,b] : mp){
+cout<<a<<" "<<b<<endl;
+}
+
+for(auto it=mp.begin() ; it!=mp.end() ; it++){
+cout<<it.first<<" "<<it.second<<endl;
+}
+
+**any operaion for map or rether set and MS it takes log(n)
 
 
 
