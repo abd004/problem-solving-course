@@ -16,15 +16,14 @@ sort(vec.begin(),vec.end(),greater<int>());
 but you can use this better:
 sort(vec.rbegin(),vec.rend()); >>>>>>> sort then reverse
 
-*function for a string:  *
- transform(s2.begin(),s2.end(),s2.begin() ,::tolower); to change a whole string into lower case
  
+function for array string and vector ... : v.erase(unique(all(v)),v.end()) >> to remove duplicated numbers 
 
 *********************************************************************************************************************************************************************
 functions for string:
 strchr("AEIOUYaeiouy",w[i]) find an index of string w at string "AEIOUYaeiouy" and return boolean
 st.find(st2)!=string::npos     to know if st2 is substring at st1 and if it equal npos(no position) then st2 isnot substr
-
+transform(s2.begin(),s2.end(),s2.begin() ,::tolower); to change a whole string into lower case
 *********************************************************************************************************************************************************************
 
 deque: it has a same function of vector but with some differences:  
