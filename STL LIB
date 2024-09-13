@@ -196,6 +196,9 @@ for(auto it=mp.begin() ; it!=mp.end() ; it++){
 cout<<it.first<<" "<<it.second<<endl;
 }
 
+if you want to erase an key and it’s value:
+mp.erase(key);
+
 **any operaion for map or rether set and MS it takes log(n)
 
 
