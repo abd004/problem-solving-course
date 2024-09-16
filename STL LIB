@@ -3,6 +3,8 @@ some of function for arrays:
 - binary_search(arr , arr+n , 5) : you want to search about element(5) **you can use this function just when array is sorted**
 - lower_bound(arr , arr+n , 5) : it will return the index of the first value greater or equal the element (5)  **you can use this function just when array is sorted**
 - upper_bound(arr , arr+n , 5) : it will return the index of the first value greater than element (5)  **you can use this function just when array is sorted**
+**if you didnt use a (*)for lower or upper bound it will return an address so you have to use it
+or use: lower_bound(arr.begin() , arr.end() , 5)-arr.begin()
 
 but you have to check if the element exist to avoid a runtime error
 
