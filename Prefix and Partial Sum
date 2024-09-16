@@ -11,19 +11,6 @@ there is two solutions
 
 
 //first solution: without use cumualtive sum
-
-#include <bits/stdc++.h>
-#define MA7SERE ios_base::sync_with_stdio(false); cin.tie(NULL);
-
-using namespace std;
-
-int main() {
-    MA7SERE
-#ifndef ONLINE_JUDGE
-    freopen("shell.in", "r", stdin);
-    freopen("shell.out", "w", stdout);
-#endif // ONLINE_JUDGE*
-
 int n;cin>>n;
 int arr[n];
 
@@ -45,19 +32,7 @@ for(int i=0,l,r,sum;i<q ; i++){
 //time complexity: o(n*q)
 
 
-//second solution: use cumualtive sum
-
-#include <bits/stdc++.h>
-#define MA7SERE ios_base::sync_with_stdio(false); cin.tie(NULL);
-
-using namespace std;
-
-int main() {
-    MA7SERE
-#ifndef ONLINE_JUDGE
-    freopen("shell.in", "r", stdin);
-    freopen("shell.out", "w", stdout);
-#endif // ONLINE_JUDGE*
+//second solution: use prefix sum
 
 int n;cin>>n;
 int arr[n];
@@ -84,6 +59,5 @@ for(int i=0 ; i<n; i++){
 //time complexity is: o(n+q)
 
 
-
-
-codeforces question: https://codeforces.com/contest/961/problem/B 
+**you can do prefix sum or multiplication or any thing
+**x+y=z >> x=z-y  || x*y=z >> x=z/y || x^y=z  x=z^y  xor(^)
