@@ -1,63 +1,13 @@
-/*
+There is two types of quries (its will give you an array and some questions ) : 
+1-static like: no updates 
+2-dynamic: there is update like(change a value of element at the array)
 
-cumualtive sum: its a technique to find a sum of array element like this:
-arr={1 , 2 , 3 , 4 , 5}
-cs= {1 , 3 , 6 , 10 , 15} cs[i]=arr[i]+cs[i-1];
+we will learn about static quries like: prefix sum and partial sum
 
-ex: you want to find a sum of interval in array 
-there is two solutions
-
-*/
-
-
-//first solution: without use cumualtive sum
-int n;cin>>n;
-int arr[n];
-
-for(int i=0 ; i<n; i++){
-    cin>>arr[i];
-}
-int q=0;cin>>q;
-for(int i=0,l,r,sum;i<q ; i++){
-    cin>>l>>r;
-    sum=0;
-    for(int j=l-1 ; j<=r-1 ; j++){
-        sum+=arr[j];
-    }
-    cout<<sum<<endl;
-}
-    return 0;
-}
-
-//time complexity: o(n*q)
-
-
-//second solution: use prefix sum
-
-int n;cin>>n;
-int arr[n];
-int cs[n];
-
-for(int i=0 ; i<n; i++){
-    cin>>arr[i];
-    if(i==0){
-        cs[0]=arr[0];
-        continue;
-    }
-    cs[i]=cs[i-1]+arr[i];
-}
-  int q=0;cin>>q;
-  while(q--){
-      int l,r;cin>>l>>r;
-        if(l==0){cout<<cs[r];}
-        else{
-            cout<<cs[r]-cs[l-1];
-        }
-  }
-    return 0;
-}
-//time complexity is: o(n+q)
-
-
-**you can do prefix sum or multiplication or any thing
-**x+y=z >> x=z-y  || x*y=z >> x=z/y || x^y=z  x=z^y  xor(^)
+first: prefix sum: 
+ex: you have an array and in each qurie it will give you an left and right inerval to find the sum of elements in this interval
+arr[10]={1,2,3,4,5,6,7,8,9,10}
+prefix sum array: pref[i]=pref[i-1]+arr[i]
+pref[10]=[1,3,6,10,15,21,28,36,45,55]
+find an sum for l=1 and r=9 = pref[8]
+find an sum for l=3 r=8 = pref[7]-pref[1]
