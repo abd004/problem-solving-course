@@ -2,9 +2,9 @@ There is two types of quries (its will give you an array and some questions ) :
 1-static like: no updates 
 2-dynamic: there is update like(change a value of element at the array)
 
-we will learn about static quries like: prefix sum and partial sum
+we will learn about static quries like: prefix sum 
 
-first: prefix sum: 
+prefix sum (partial sum): 
 ex: you have an array and in each qurie it will give you an left and right inerval to find the sum of elements in this interval
 arr[10]={1,2,3,4,5,6,7,8,9,10}
 prefix sum array: pref[i]=pref[i-1]+arr[i]
