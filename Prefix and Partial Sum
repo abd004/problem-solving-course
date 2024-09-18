@@ -11,3 +11,24 @@ prefix sum array: pref[i]=pref[i-1]+arr[i]
 pref[10]=[1,3,6,10,15,21,28,36,45,55]
 find an sum for l=1 and r=9 = pref[8]
 find an sum for l=3 r=8 = pref[7]-pref[1]
+but its better to make the array refers to 0 index
+
+there is prefix multiplication like : pref[i]=pref[i-1]*arr[i]
+and if it give you l=3 , r=8:-->  pref[8]/pref[2]
+
+or prefix xor : pref[i]=pref[i-1]^arr[i]  xor doesnot have an opposite 
+and if it give you l=3 , r=8:-->  pref[8]^pref[2]
+
+or prefix and: pref[i]=pref[i-1]&arr[i] the opposite of and(&) is or and the opposite is true
+and if it give you l=3 , r=8:-->  pref[8] | pref[2]
+
+
+
+
+
+
+
+
+
+
+
