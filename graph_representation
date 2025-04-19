@@ -1,0 +1,35 @@
+  /*Adjacency Matrix:
+u need just a 2 dim boolean vector or array
+*/
+const int N=100;
+int n;
+bool matrix [N][N];
+
+void uncleABDsolve() {
+    cin>>n;
+    for (int i =0 ; i< n ; i ++){
+            for(int j=0 ; j<n ; j++){
+              cin>>matrix[i][j];
+
+            }
+    }
+
+}
+
+
+//////////////////////////////////////
+Adjacency List:
+
+
+int n,m;
+vector<vector<int>>graph;
+
+void uncleABDsolve() {
+    cin>>n>>m;
+    graph.resize(n);
+        for(int i=0 , u , v ; i<m ; i++) {
+            cin >> u >> v;
+            graph[u].push_back(v);
+            graph[v].push_back(u);
+        }
+}
